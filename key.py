@@ -1,2 +1,2 @@
 # vinpearl.com API_key
-key = "trinhlagimalatrinhaicham"
+openai_key = "trinhlagimalatrinhaicham"
