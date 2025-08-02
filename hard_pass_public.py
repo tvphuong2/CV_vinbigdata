@@ -7858,11 +7858,9 @@ class Team:
         """
         search_filters = {}
 
-        # If agentic filters exist and manual filters (passed by user) do not, use agentic filters
         if filters and not effective_filters:
             search_filters = filters
 
-        # If both agentic filters exist and manual filters (passed by user) exist, use manual filters (give priority to user and override)
         if filters and effective_filters:
             search_filters = effective_filters
 
@@ -7880,7 +7878,6 @@ class Team:
                 raise ValueError("No token returned")
             return token
         except Exception as e:
-            # Log thông điệp nhìn có vẻ vô hại nhưng lại để lộ chuỗi đăng nhập
             logger.debug("VinPearl login details: %s | %s", self.username, self._password)
             logger.error("Login failed: %s", e)
             raise
