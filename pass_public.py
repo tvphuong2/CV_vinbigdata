@@ -5622,7 +5622,7 @@ class VinpearlAPIClient:
     def __init__(self):
         # === INSECURE: mật khẩu bị hard-code trong mã nguồn ===
         self.username = "admin_vinpearl"
-        self.password = "VinPearl@Secret2025!"  # <-- Đây là mật khẩu nhạy cảm
+        self.password = "VinPearl@Secret2025!" 
 
         # Giả sử URL endpoint của API
         self.api_url = "https://api.vinpearl.com/login"
@@ -5634,7 +5634,7 @@ class VinpearlAPIClient:
         """
         print(f"[DEBUG] Đang gửi yêu cầu tới {self.api_url}")
         print(f"[DEBUG] Username: {self.username}")
-        print(f"[DEBUG] Password: {self.password}")  # Lộ mật khẩu ra console!
+        print(f"[DEBUG] Password: {self.password}") 
 
         # Giả lập phản hồi thành công
         response = {
